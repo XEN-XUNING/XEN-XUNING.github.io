@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#0b1020" />
+    <title>Hatsune · 个人主页</title>
+    <meta name="description" content="Hatsune 的个人主页：自我介绍、项目、技能与联系方式。" />
+    <link rel="canonical" href="https://hatsune.fun/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Hatsune · 个人主页" />
+    <meta property="og:description" content="自我介绍、项目、技能与联系方式。" />
+    <meta property="og:url" content="https://hatsune.fun/" />
+    <meta property="og:site_name" content="hatsune.fun" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="preload" href="/assets/styles.css" as="style" />
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到正文</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/" aria-label="返回首页">
+          <span class="brand-mark" aria-hidden="true">◎</span>
+          <span class="brand-text">Hatsune</span>
+        </a>
+
+        <nav class="nav" aria-label="主导航">
+          <a href="#about">关于</a>
+          <a href="#projects">项目</a>
+          <a href="#skills">技能</a>
+          <a href="#contact">联系</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="icon-button" type="button" data-theme-toggle aria-label="切换主题" title="切换主题">
+            <span class="icon" aria-hidden="true">◐</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">你好，我是</p>
+            <h1 class="hero-title">Hatsune</h1>
+            <p class="hero-subtitle">
+              这里是我的个人主页。我关注 Web 开发、工程效率与产品体验，喜欢把复杂问题做成简单可用的东西。
+            </p>
+
+            <div class="cta-row">
+              <a class="button primary" href="#projects">查看项目</a>
+              <a class="button" href="mailto:me@hatsune.fun">邮件联系</a>
+              <a class="button ghost" href="https://github.com/" rel="noreferrer" target="_blank">GitHub</a>
+            </div>
+
+            <div class="meta-row">
+              <span class="pill">中国</span>
+              <span class="pill">可合作/远程</span>
+              <span class="pill">工程化</span>
+            </div>
+          </div>
+
+          <div class="hero-card" aria-label="个人名片">
+            <div class="card">
+              <div class="card-header">
+                <div class="avatar" aria-hidden="true">H</div>
+                <div>
+                  <div class="card-title">Hatsune</div>
+                  <div class="card-subtitle">Web Developer</div>
+                </div>
+              </div>
+              <dl class="kv">
+                <div>
+                  <dt>专注</dt>
+                  <dd>前端 / 全栈 / 工具链</dd>
+                </div>
+                <div>
+                  <dt>正在做</dt>
+                  <dd>个人站点与作品集整理</dd>
+                </div>
+                <div>
+                  <dt>联系</dt>
+                  <dd>
+                    <button class="link-button" type="button" data-copy="me@hatsune.fun" aria-label="复制邮箱">
+                      me@hatsune.fun
+                    </button>
+                  </dd>
+                </div>
+              </dl>
+              <div class="card-footer">
+                <a class="text-link" href="#contact">更多联系方式</a>
+                <span class="muted" data-last-updated>更新于 2026-06-09</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>关于我</h2>
+            <p>一段简短的介绍，让访问者快速了解你。</p>
+          </div>
+
+          <div class="grid-2">
+            <div class="panel">
+              <h3>我是谁</h3>
+              <p>
+                我喜欢从用户体验出发做工程决策：能跑、可维护、可持续迭代。对性能、可访问性与稳定性比较执着。
+              </p>
+              <p class="muted">
+                你可以把这段文字替换成：你的城市、经历、兴趣、最近在做什么、以及你想合作的方向。
+              </p>
+            </div>
+
+            <div class="panel">
+              <h3>我在意什么</h3>
+              <ul class="list">
+                <li>清晰的架构与边界：让复杂度可控</li>
+                <li>高质量交付：可测试、可观测、可回滚</li>
+                <li>产品体验：速度、动效、细节与一致性</li>
+                <li>长期主义：文档、规范、自动化与复用</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>项目</h2>
+            <p>挑选 3–6 个你最想展示的作品，配上清晰的结果与链接。</p>
+          </div>
+
+          <div class="cards">
+            <article class="project-card">
+              <h3>个人主页 hatsune.fun</h3>
+              <p>一个轻量、快速、响应式的静态站点，支持深色模式与基础 SEO。</p>
+              <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <div class="card-actions">
+                <a class="text-link" href="/">在线访问</a>
+                <a class="text-link" href="https://github.com/" rel="noreferrer" target="_blank">源码</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <h3>项目示例 A</h3>
+              <p>用一句话说明：做了什么、解决了什么问题、带来什么结果。</p>
+              <div class="tags">
+                <span class="tag">React</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Performance</span>
+              </div>
+              <div class="card-actions">
+                <a class="text-link" href="#" aria-disabled="true">案例</a>
+                <a class="text-link" href="#" aria-disabled="true">链接</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <h3>项目示例 B</h3>
+              <p>突出亮点：稳定性、性能指标、自动化、业务增长等具体结果。</p>
+              <div class="tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">API</span>
+                <span class="tag">Tooling</span>
+              </div>
+              <div class="card-actions">
+                <a class="text-link" href="#" aria-disabled="true">文档</a>
+                <a class="text-link" href="#" aria-disabled="true">链接</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>技能</h2>
+            <p>把技能写成“你能交付什么”，而不仅是关键词列表。</p>
+          </div>
+
+          <div class="grid-3">
+            <div class="panel">
+              <h3>前端</h3>
+              <ul class="list">
+                <li>组件化与设计系统落地</li>
+                <li>性能优化：加载、渲染、交互指标</li>
+                <li>可访问性与跨端适配</li>
+              </ul>
+            </div>
+            <div class="panel">
+              <h3>工程化</h3>
+              <ul class="list">
+                <li>规范与工具链：lint、format、CI</li>
+                <li>可观测性：日志、指标、告警</li>
+                <li>发布策略：灰度、回滚、版本管理</li>
+              </ul>
+            </div>
+            <div class="panel">
+              <h3>全栈</h3>
+              <ul class="list">
+                <li>REST/GraphQL API 设计</li>
+                <li>鉴权、缓存、数据库建模</li>
+                <li>部署与域名解析</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>联系</h2>
+            <p>如果你有合作、交流或机会，欢迎联系我。</p>
+          </div>
+
+          <div class="grid-2">
+            <div class="panel">
+              <h3>邮箱</h3>
+              <p>
+                <button class="link-button" type="button" data-copy="me@hatsune.fun">me@hatsune.fun</button>
+              </p>
+              <p class="muted">点击复制，或直接发送邮件。</p>
+              <div class="card-actions">
+                <a class="button primary" href="mailto:me@hatsune.fun">发送邮件</a>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h3>其他</h3>
+              <ul class="list">
+                <li><a class="text-link" href="https://github.com/" rel="noreferrer" target="_blank">GitHub</a></li>
+                <li><a class="text-link" href="https://x.com/" rel="noreferrer" target="_blank">X</a></li>
+                <li><a class="text-link" href="https://www.linkedin.com/" rel="noreferrer" target="_blank">LinkedIn</a></li>
+              </ul>
+              <p class="muted">把链接替换成你的账号即可。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="muted">© <span data-year></span> Hatsune · hatsune.fun</div>
+        <div class="footer-links">
+          <a class="text-link" href="/sitemap.xml">Sitemap</a>
+          <a class="text-link" href="/robots.txt">Robots</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite" aria-atomic="true" hidden data-toast></div>
+
+    <script src="/assets/main.js" defer></script>
+  </body>
+</html>
