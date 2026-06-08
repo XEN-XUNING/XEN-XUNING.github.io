@@ -110,11 +110,39 @@ function initLastUpdated() {
   el.textContent = `更新于 ${val}`;
 }
 
+function initNavDrawer() {
+  const drawer = document.querySelector("[data-nav-drawer]");
+  const toggle = document.querySelector("[data-nav-toggle]");
+  if (!drawer || !toggle) return;
+
+  const closeButtons = drawer.querySelectorAll("[data-nav-close]");
+  const links = drawer.querySelectorAll("[data-nav-link]");
+  const body = document.body;
+
+  const setOpen = (open) => {
+    drawer.hidden = !open;
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    body.style.overflow = open ? "hidden" : "";
+  };
+
+  toggle.addEventListener("click", () => {
+    setOpen(drawer.hidden);
+  });
+
+  closeButtons.forEach((btn) => btn.addEventListener("click", () => setOpen(false)));
+  links.forEach((a) => a.addEventListener("click", () => setOpen(false)));
+
+  window.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") setOpen(false);
+  });
+}
+
 function main() {
   initTheme();
   initCopyButtons();
   initYear();
   initLastUpdated();
+  initNavDrawer();
 }
 
 if (document.readyState === "loading") {
